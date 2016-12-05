@@ -1,0 +1,117 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Bazinga!!!</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/gallery.css">
+        <link rel="stylesheet" href="css/crew.css">
+        <link rel="stylesheet" href="css/ticket.css">
+    </head>
+
+    <body>
+
+        <script src="js/vendor/jquery-3.1.1.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/tickets.js"></script>
+        <script src="js/image_manipulator.js"></script>
+
+        <!-- HEADER -->
+        <div class="header">
+            <!-- Gallery wrapper -->
+            <div class="header_gallery">
+                <input id="gallery_title" style="display:block;" type="button" click="select(1)" value="Gallery"/>
+                <div id="gallery_id" class="selector hidden"/>
+            </div>
+            <!-- Crew wrapper -->
+            <div class="header_crew">
+                <input id="crew_title" style="display:block;" type="button" click="select(2)" value="Crew"/>
+                <div id="crew_id" class="selector hidden"/>     
+            </div>
+            <!-- Ticket wrapper -->
+            <div class="header_ticket">
+                <input id="ticket_title" style="display:block;" type="button" click="select(3)" value="Buy a ticket"/>
+                <div id="ticket_id" class="selector active"/>
+            </div>
+        </div>   
+
+        <!-- BODY -->
+        <div class="container">
+
+            <!-- Ticket content -->
+            <div id="section_ticket" class="section active">
+                <div>Name:</div>
+                <input style="display:block;" id="ticket_name" type="text" placeholder="Enter your name"/>
+                <div>Last name:</div>
+                <input style="display:block;margin-bottom:10px;" id="ticket_last_name" type="text" placeholder="Enter your last name"/>
+                <p style="display:block;margin-bottom:20px;">Choose your adventure buddy:</p>
+
+                <!-- First row-->
+                <div class="crew_row">
+
+                    <!-- Left white space -->
+                    <div class="row_padding"/>
+                    <!-- Member 1 -->
+                    <div id="buddy_1" class="crew_member_wrapper unselected" click="setPictureEnabled(1)">
+                        <div class="member_1"/>
+                        <div>Crew member 1</div>
+                    </div>
+                    <!-- Hozirontal space -->
+                    <div class="h_space"/>
+                    <!-- Member 2 -->
+                    <div id="buddy_2" class="crew_member_wrapper unselected" click="setPictureEnabled(2)">
+                        <div class="member_2"/>
+                        <div>Crew member 2</div>
+                    </div>
+                     <!-- Hozirontal space -->
+                    <div class="h_space"/>
+                    <!-- Member 3 -->
+                    <div id="buddy_3" class="crew_member_wrapper unselected" click="setPictureEnabled(3)">
+                        <div class="member_3"/>
+                        <div>Crew member 3</div>
+                    </div>
+                    <!-- Right white space -->
+                    <div class="row_padding"/>
+                </div>
+
+                <!-- Second row -->
+                <div class="crew_row">
+                     <!-- Left white space -->
+                    <div class="row_padding"/>
+                    <!-- Member 1 -->
+                    <div id="buddy_4" class="crew_member_wrapper unselected" click="setPictureEnabled(4)">
+                        <div class="member_4"/>
+                        <div>Crew member 4</div>
+                    </div>
+                    <!-- Hozirontal space -->
+                    <div class="h_space"/>
+                    <!-- Member 2 -->
+                    <div id="buddy_5" class="crew_member_wrapper unselected" click="setPictureEnabled(5)">
+                        <div class="member_5"/>
+                        <div>Crew member 5</div>
+                    </div>
+                     <!-- Hozirontal space -->
+                    <div class="h_space"/>
+                    <!-- Member 3 -->
+                    <div id="buddy_6" class="crew_member_wrapper unselected" click="setPictureEnabled(6)">
+                        <div class="member_6"/>
+                        <div>Crew member 6</div>
+                    </div>
+                    <!-- Right white space -->
+                    <div class="row_padding"/>
+                </div>
+
+                <!-- Call to action button -->
+                <div style="width:100%;clear:both;">
+                    <div class="buy_ticket" click="buyATicket">Buy a ticket</div>
+                </div>
+            </div>          
+        </div>
+    </body>
+</html>

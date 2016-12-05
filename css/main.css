@@ -1,0 +1,58 @@
+/* Defines how the width and height of the element are calculated: whether they include the padding and borders or not. */
+
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+/*------------*/
+/* Parent */
+.header{
+	clear:both;
+	height:200px;
+}
+
+/* Header GALLERY */
+.header_gallery{
+	float:left;
+}
+.header_gallery_inner{
+}
+
+/* Header CREW */
+.header_crew{
+	float:left;
+}
+.header_crew_inner{
+}
+
+/* Header TICKET */
+.header_ticket{
+	float:left;
+}
+.header_ticket_inner{
+}
+
+/* Common header attributes */
+.selector{
+	background-color; #1F91FF;
+	height:10px;
+	width:50px;
+}
+
+.hidden{
+	visibility:hidden;
+}
+
+.active{
+	/* What's the attribute for this? */
+	visibility:visible;
+}
+
+.section{
+	position:absolute;
+}

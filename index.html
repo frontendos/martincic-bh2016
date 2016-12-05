@@ -1,0 +1,60 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Bazinga!!!</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/gallery.css">
+        <link rel="stylesheet" href="css/crew.css">
+        <link rel="stylesheet" href="css/ticket.css">
+    </head>
+
+    <body>
+
+        <script src="js/vendor/jquery-3.1.1.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/tickets.js"></script>
+        <script src="js/image_manipulator.js"></script>
+
+        <!-- HEADER -->
+        <div class="header">
+            <!-- Gallery wrapper -->
+            <div class="header_gallery">
+                <input id="gallery_title" style="display:block;" type="button" click="select(1)" value="Gallery"/>
+                <div id="gallery_id" class="selector active"/>
+            </div>
+            <!-- Crew wrapper -->
+            <div class="header_crew">
+                <input id="crew_title" style="display:block;" type="button" click="select(2)" value="Crew"/>
+                <div id="crew_id" class="selector hidden"/>     
+            </div>
+            <!-- Ticket wrapper -->
+            <div class="header_ticket">
+                <input id="crew_title" style="display:block;" type="button" click="select(3)" value="Buy a ticket"/>
+                <div id="ticket_id" class="selector hidden"/>
+            </div>
+        </div>   
+
+        <!-- BODY -->
+        <div class="container">
+            <!-- Gallery content -->
+            <div id="section_gallery" style="position:relative;" class="active">
+                <div class="image_container">
+                    <div id="first_image" style="position:absolute;" class="image image1 active"/>
+                    <div id="second_image" style="position:absolute;" class="image image2 hidden"/>
+                    <div id="third_image" style="position:absolute;" class="image image3 hidden"/>
+                </div>
+            </div>
+           <div class="image_control_wrapper">
+                <div class="previous_image" click="goToPrevious">Previous</div>
+                <div class="next_image" click="goToNext">Next</div>
+            </div>
+        </div>
+    </body>
+</html>

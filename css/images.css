@@ -1,0 +1,44 @@
+/* Defines how the width and height of the element are calculated: whether they include the padding and borders or not. */
+
+
+.image_container{
+	width:1600px;
+	height:1000px;
+	display:block;
+}
+
+.image{
+	width:inherit;
+	height:inherit;
+}
+
+.image1{
+	background-image: url("../img/image1.png");
+}
+.image2{
+	background-image: url("../img/image2.png");
+}
+.image3{
+	background-image: url("../img/image3.png");
+}
+
+.previous_image{
+	float:left;
+	background-color: transparent;
+}
+
+.next_image{
+	float:right;
+	background-color: transparent;
+}
+
+.previous_image:hover{
+	background-color: #1F91FF;
+}
+.next_image:hover{
+	background-color: #1F91FF;
+}
+
+.image_control_wrapper{
+	clear:both;
+}

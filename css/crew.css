@@ -1,0 +1,45 @@
+/* Defines how the width and height of the element are calculated: whether they include the padding and borders or not. */
+
+.crew_member_wrapper{
+	width:20%;
+	float:left;
+}
+
+.h_space{
+	width:15%;
+	float:left;
+}
+
+.crew_member_name{
+	width:inherit;
+}
+
+.member_1{
+	background-image: url(/img/avatar1.png);
+}
+.member_2{
+	background-image: url(/img/avatar2.png);
+}
+.member_3{
+	background-image: url(/img/avatar3.png);
+}
+.member_4{
+	background-image: url(/img/avatar4.png);
+}
+.member_5{
+	background-image: url(/img/avatar5.png);
+}
+.member_6{
+	background-image: url(/img/avatar6.png);
+}
+
+.crew_row{
+	clear:both;
+}
+
+.row_padding{
+	width:4%;
+	float:left;
+	background-color:transparent;
+}
+

@@ -1,0 +1,17 @@
+
+/* Select a buddy */
+.selected{
+	border:5px solid #1F91FF;
+}
+
+/* Clear selection from buddy image. */
+.unselected{
+	border:0px solid transparent;
+}
+
+.buy_ticket{
+	background-color: #CCC;
+}
+.buy-ticket:hover{
+	background-color: #1F91FF;
+}
